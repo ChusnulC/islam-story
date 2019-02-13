@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgfull"
+    tools:context=".FullScreen.FullSliderPerjalananActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/imgOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/out"/>
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_below="@+id/category"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/time"
+                    android:layout_below="@+id/title"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"/>
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3 Menit"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_below="@+id/title"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="40dp"
+                    android:textStyle="bold"/>
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:id="@+id/text_isi"
+                    android:layout_below="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="20sp"
+                    android:layout_marginTop="65dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginBottom="20dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

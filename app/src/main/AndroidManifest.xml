@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.joyleap.islamstory">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mosque"
+        android:label="Islam Story"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".News.RahasiaActivity" />
+        <activity android:name=".News.BelajarActivity" />
+        <activity android:name=".News.KisahActivity" />
+        <activity android:name=".News.CeritaActivity" />
+        <activity android:name=".News.SedekahActivity" />
+        <activity android:name=".FullScreen.FullBelajarActivity" />
+        <activity android:name=".News.SliderKoran" />
+        <activity android:name=".News.SliderPerjalanan" />
+        <activity android:name=".News.SliderWali" />
+        <activity android:name=".FullScreen.FullCeritaActivity" />
+        <activity android:name=".FullScreen.FullKisahActivity" />
+        <activity android:name=".FullScreen.FullRahasiaActivity" />
+        <activity android:name=".FullScreen.FullSedekahActivity" />
+        <activity android:name=".FullScreen.FullSliderKoranActivity" />
+        <activity android:name=".FullScreen.FullSliderPerjalananActivity" />
+        <activity android:name=".FullScreen.FullSliderWaliActivity" />
+        <activity android:name=".sidebar.EditActivity" />
+        <activity android:name=".sidebar.CreateActivity" />
+        <activity android:name=".sidebar.ArchiveActivity" />
+        <activity android:name=".sidebar.DeatilNewsActivity" />
+        <activity android:name=".sidebar.FullScreenActivity" />
+        <activity android:name=".sidebar.ProfileActivity" />
+        <activity android:name=".Detail" />
+        <activity android:name=".sidebar.Full" />
+        <activity android:name=".Full"></activity>
+    </application>
+
+</manifest>
